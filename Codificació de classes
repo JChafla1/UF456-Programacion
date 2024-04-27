@@ -1,5 +1,8 @@
 import java.util.Scanner; //Solicitar datos al teclado
 
 public class media {
-    
+    //Atributos
+    String nombre;
+    String autor;
+    int duradaSegons;
 }
