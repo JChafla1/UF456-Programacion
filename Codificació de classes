@@ -16,15 +16,27 @@ public class media {
     public void ObtenerNombre() {
         System.out.println("Ingrese su nombre:");
         nombre = obj.nextLine();
+        System.out.println("Su nombre es: " + nombre);
     }
 
     public void ObtenerAutor() {
         System.out.println("Ingrese el autor:");
         autor = obj.nextLine();
+        System.out.println("El autor es: " + autor);
     }
 
     public void ObtenerDuradaSegons() {
-        System.out.println("Ingrese el autor:");
+        System.out.println("Ingrese los segundos:");
         duradaSegons = obj.nextInt();
+        System.out.println("La durada se segons es: " + duradaSegons);
+    }
+
+    //Ni yo se lo que he hecho, osea si pero no me queda del todo claro, en clase te pregunto
+    // MAIN
+    public static void main(String[] args) {
+        media ado = new media();
+        ado.ObtenerNombre();
+        ado.ObtenerAutor();
+        ado.ObtenerDuradaSegons();
     }
 }
