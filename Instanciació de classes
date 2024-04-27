@@ -1,5 +1,7 @@
 public class ClasseA {
-    
+    // Atributos
+    private int valorPrimari;
+    private int valorSecundari;
 
 
     // Método main para probar la clase
