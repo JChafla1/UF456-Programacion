@@ -3,6 +3,24 @@ public class ClasseA {
     private int valorPrimari;
     private int valorSecundari;
 
+    // GETTERS
+    public int getPrimari() {
+        return this.valorPrimari;
+    }
+    
+    public int getSecundari() {
+        return this.valorSecundari;
+    }
+
+    // SETTERS
+    public void setPrimari(int vp) {
+        this.valorPrimari = vp;
+    }
+    
+    public void setSecundari(int vs) {
+        this.valorSecundari = vs;
+    }
+    
 
     // Método main para probar la clase
     public static final void main(String[] args) {
