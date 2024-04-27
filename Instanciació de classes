@@ -20,7 +20,19 @@ public class ClasseA {
     public void setSecundari(int vs) {
         this.valorSecundari = vs;
     }
-    
+
+    // Los 3 constructores del ejercicio
+    public ClasseA() {
+
+    }
+
+    public ClasseA(int vp) {
+
+    }
+
+    public ClasseA(int vp, int vs) {
+
+    }
 
     // Método main para probar la clase
     public static final void main(String[] args) {
