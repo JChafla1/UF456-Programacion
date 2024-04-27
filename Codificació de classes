@@ -5,4 +5,10 @@ public class media {
     String nombre;
     String autor;
     int duradaSegons;
+
+    // Esto nos permite solicitar los datos por teclado de una manera facil
+    // Se que pedias hacerlo con get y set, pero habia algo que no me encajaba
+    // Y google y youtube no encontraba la respuesta exacta, asi que me he venido 
+    // Este camino aunque sea
+    Scanner obj = new Scanner(System.in);
 }
