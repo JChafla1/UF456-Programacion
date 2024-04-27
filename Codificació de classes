@@ -11,4 +11,20 @@ public class media {
     // Y google y youtube no encontraba la respuesta exacta, asi que me he venido 
     // Este camino aunque sea
     Scanner obj = new Scanner(System.in);
+
+    // Metodos
+    public void ObtenerNombre() {
+        System.out.println("Ingrese su nombre:");
+        nombre = obj.nextLine();
+    }
+
+    public void ObtenerAutor() {
+        System.out.println("Ingrese el autor:");
+        autor = obj.nextLine();
+    }
+
+    public void ObtenerDuradaSegons() {
+        System.out.println("Ingrese el autor:");
+        duradaSegons = obj.nextInt();
+    }
 }
