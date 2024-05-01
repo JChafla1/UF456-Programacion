@@ -1,5 +1,12 @@
 
+public abstract class Figura2D implements FiguraGeometrica {
+    protected String nom;
 
-public class Figura2D {
-    
+    public Figura2D(String nom) {
+        this.nom = nom;
+    }
+
+    public String getNom() {
+        return nom;
+    }
 }
