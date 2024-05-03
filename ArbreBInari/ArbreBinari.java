@@ -1,4 +1,4 @@
-
+import java.util.*;
 
 public class ArbreBinari {
     private TreeNode root;
@@ -33,5 +33,24 @@ public class ArbreBinari {
         return instanceCount;
     }
 
-}
+    // Metodo para insertar elementos balanceadamente
+    public void insertarBalanceado(List<Intenger> elementos) {
+        this.root = construirArbreBalanceat(elementos, 0, elementos.size() - 1);
+    }
 
+    // Metodo recursivo para construir un arbol binario
+    private TreeNode construirArbreBalanceat(List<Integer> elementos, int inicio, int fin){
+        if (inicio > fin) {
+            return null;
+        }
+
+        int medio = (inicio + fin) / 2;
+        TreeNode nodo = new TreeNode(elementos.get(medio), this.profundidad);
+
+        nodo.setIzquierda(construirArbreBalanceat(elementos, inicio, medio - 1));
+        nodo.setDerecha(construirArbreBalanceat(elementos, inicio, medio - 1));
+
+        return nodo;
+    }
+
+}
