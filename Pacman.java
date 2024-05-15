@@ -14,5 +14,13 @@ public class Pacman {
         this.puntuacio = 0;
     }
 
+    // Implementa el moviment de Pac-Man
+    public void move(int newPosX, int newPosY) {
+        
+        this.posX = newPosX;
+        this.posY = newPosY;
+    }
+
+    
     
 }
