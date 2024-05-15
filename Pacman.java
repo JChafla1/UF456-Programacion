@@ -40,7 +40,9 @@ public class Pacman {
         this.vides--; // Reduce la vida
     }
 
-
-    
+    //Metodo para deterctar a Pacman chocas contra un fantasma
+    public boolean detectColisionFantasma(Fantasma fantasma) {
+        return (this.posX == fantasma.getPosX() && this.posY == fantasma.getPosY());
+    }
 
 }
