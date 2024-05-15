@@ -44,8 +44,8 @@ public class Pacman {
     public boolean detectColisionFantasma(Fantasma fantasma) {
         return (this.posX == fantasma.getPosX() && this.posY == fantasma.getPosY());
     }
-
 }
+
 
 // Classe Fantasma
 public class Fantasma {
@@ -64,3 +64,26 @@ public class Fantasma {
         this.posY = newPosY;
     }
 }
+
+
+// Classe Bola
+public class Bola {
+    private int posX;
+    private int posY;
+    
+    public Bola(int posX, int posY) {
+        this.posX = posX;
+        this.posY = posY;
+    }
+    
+    // Metodo para obtener la posicion de la bola
+    public int getPosX() {
+        return posX;
+    }
+    
+    public int getPosY() {
+        return posY;
+    }
+}
+
+
