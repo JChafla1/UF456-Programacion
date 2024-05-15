@@ -35,6 +35,11 @@ public class Pacman {
         this.puntuacion += 100; // Ejemplo de puntuacion de frutas
     }
 
+    //Metodo para perder vida
+    public void loseLife() {
+        this.vides--; // Reduce la vida
+    }
+
 
     
 
