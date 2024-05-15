@@ -187,3 +187,33 @@ public class Pasillos {
     }
 }
 
+
+//Clase Casa de los fantasmas
+public class CasaFantasma {
+    private int posX;
+    private int posY;
+
+    //Constructor de la clase CasaFantasma
+    public CasaFantasma(int posX, int posY) {
+        this.posX = posX;
+        this.posY = posY;
+    }
+
+    //Metodo para establecer la clase CasaFantasma.
+    public int getPosX() {
+        return posX;
+    }
+
+    public int getPosY() {
+        return posY;
+    }
+
+    public void setPosX(int posX) {
+        this.posX = posX;
+    }
+
+    public void setPosY(int posY) {
+        this.posY = posY;
+    }
+}
+
