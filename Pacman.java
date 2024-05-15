@@ -167,3 +167,23 @@ public class Laberinto {
     }
 }
 
+
+// Clase Pasillos
+public class Pasillos {
+    private char[][] estructura;
+    
+    //Constructor de la clase Pasillos.
+    public Pasillos() {
+        this.estrucutra = estructura;
+    }
+
+    //Metodo para establecer si la posicion es un Pasillos.
+    public boolean Pasillos (int posX, int posY) {
+        return estrucutra [posX] [posY] == "&";
+    }
+
+    public boolean Pared (int posX, int posY) {
+        return estrucutra [posX] [posY] == "#";
+    }
+}
+
