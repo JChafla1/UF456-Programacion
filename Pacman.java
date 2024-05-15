@@ -46,3 +46,21 @@ public class Pacman {
     }
 
 }
+
+// Classe Fantasma
+public class Fantasma {
+        private int posX;
+        private int posY;
+
+    //Constructor de la Clase Fantasma.
+    public Fantasma(int newPosX, int newPosY){
+        this.posX = posX;
+        this.posY = posY;
+    }
+
+    //Metodo para el movimiento del fantasma
+    public void move(int newPosX, int newPosY) {
+        this.posX = newPosX;
+        this.posY = newPosY;
+    }
+}
