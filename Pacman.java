@@ -150,3 +150,20 @@ public class Fruta {
         this.posY = posY;
     }
 }
+
+
+// Clase Laberinto
+public class Laberinto {
+    private char[][] mapa; // Representacion del laberinto en una matrix
+    
+    //Constructor de la clase Laberinto.
+    public Laberinto(char[][] mapa) {
+        this.mapa = mapa;
+    }
+
+    //Metodo para establecer si la posicion es un Laberinto.
+    public boolean esPasillo(int x, int y) {
+        return mapa[y][x] == ' ';
+    }
+}
+
