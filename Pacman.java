@@ -15,12 +15,15 @@ public class Pacman {
     }
 
     // Implementa el moviment de Pac-Man
-    public void move(int newPosX, int newPosY) {
-        
+    public void move(int newPosX, int newPosY) {        
         this.posX = newPosX;
         this.posY = newPosY;
     }
 
-    
-    
+    //Recogida de bolas y suma de puntuacion
+    public void pickupBola() {
+        puntuacion += 15; // Ejemplo de puntos
+    }
+
+
 }
