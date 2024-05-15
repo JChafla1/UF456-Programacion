@@ -25,5 +25,10 @@ public class Pacman {
         puntuacion += 15; // Ejemplo de puntos
     }
 
+    //Metodo para cojer una bola especial y que sume la puntuacion.
+    public void pickupBolaEspecial() {
+        puntuacion += 40; // Ejemplo de puntos extra
+    }
+
 
 }
