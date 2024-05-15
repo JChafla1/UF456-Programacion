@@ -22,13 +22,20 @@ public class Pacman {
 
     //Recogida de bolas y suma de puntuacion
     public void pickupBola() {
-        puntuacion += 15; // Ejemplo de puntos
+        this.puntuacion += 15; // Ejemplo de puntos
     }
 
     //Metodo para cojer una bola especial y que sume la puntuacion.
     public void pickupBolaEspecial() {
-        puntuacion += 40; // Ejemplo de puntos extra
+        this.puntuacion += 40; // Ejemplo de puntos extra
     }
 
+    //Recogida de fruta y suma de puntuacion
+    public void pickupFruita() {
+        this.puntuacion += 100; // Ejemplo de puntuacion de frutas
+    }
+
+
+    
 
 }
