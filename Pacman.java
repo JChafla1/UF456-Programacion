@@ -118,3 +118,35 @@ public class BolaEspecial {
         this.posY = posY;
     }
 }
+
+
+// Clase Fruta
+public class Fruta {
+    private int posX;
+    private int posY;
+    private boolean recogida;
+    
+    //Constructor
+    public Fruta(int posX, int posY){
+        this.posX = posX;
+        this.posY = posY;
+        this.recogida = false;
+    }
+
+    //Metodo para la posicion de la fruta
+    public int getPosX() {
+        return posX;
+    }
+
+    public int getPosY() {
+        return posY;
+    }
+
+    public void setPosX(int posX) {
+        this.posX = posX;
+    }
+
+    public void setPosY(int posY) {
+        this.posY = posY;
+    }
+}
