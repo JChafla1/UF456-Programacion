@@ -17,6 +17,27 @@ class Tasca{
         this.prioridad = prioridad;
         this.completa = false;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getPrioridad() {
+        return prioridad;
+    }
+
+    public boolean isCompleta() {
+        return completa;
+    }
+
+    public void marcarCompletada() {
+        this.completa = true;
+    }
+
+    @Override // Sirve para hacer una redefinicion de codigo
+    public String toString() {
+        return "ID: " + id + ", Descripció: " + descripcio + ", Prioritat: " + prioritat + ", Completada: " + (completada ? "Sí" : "No");
+    }
 }
 
 class main {
