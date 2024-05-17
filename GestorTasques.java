@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-class GestorTasques {
+public class GestorTasques {
  
 }
 
-public class main {
+class main {
  private static Scanner scanner = new Scanner(System.in);
 
  public static void main(String[] args) {
