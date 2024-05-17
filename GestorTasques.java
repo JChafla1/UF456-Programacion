@@ -1,7 +1,22 @@
 import java.util.Scanner;
 
 public class GestorTasques {
+    
  
+}
+
+class Tasca{
+    // Atributos
+    private int id;
+    private String prioridad;
+    private boolean completa;
+
+    // Constructores
+    public Tasca(int id, String prioridad) {
+        this.id = id;
+        this.prioridad = prioridad;
+        this.completa = false;
+    }
 }
 
 class main {
