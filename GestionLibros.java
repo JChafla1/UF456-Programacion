@@ -14,6 +14,16 @@ class LlistaLlibres<T> {
     public void eliminarLibro(T libro) {
         lista.remove(libro);
     }
+
+    public T buscarLibroPorTitulo(String titulo) {
+        for (T libro : lista) {
+            // instanceof: comprueba si un objeto es una instancia de tipo clase o interficie
+            if (libro instanceof Libro && ((Libro) libro).getTitulo().equalsIgnoreCase(titulo)) {
+                return libro;
+            }
+        }
+        return null;
+    }
     
 }
 
