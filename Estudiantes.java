@@ -31,6 +31,15 @@ class Estudiante {
     public ArrayList<String> getMaterias() {
         return materias;
     }
+
+    // Metodos de manipulacion
+    public void afegirMateria(String materia) {
+        materias.add(materia);
+    }
+
+    public void eliminarMateria(String materia) {
+        materias.remove(materia);
+    }
     
 }
 
