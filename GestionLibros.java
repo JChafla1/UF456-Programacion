@@ -59,3 +59,18 @@ class Libro {
 public class GestionLibros {
     
 }
+
+
+// Clases especificas para cada genero
+class Novela extends Libro {
+
+}
+
+class CienciaFiccio extends Libro {
+
+}
+
+class Poesia extends Libro {
+
+}
+
