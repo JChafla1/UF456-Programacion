@@ -14,6 +14,23 @@ class Estudiante {
         this.edad = edad;
         this.materias = new ArrayList<>();
     }
+
+    // Getters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public ArrayList<String> getMaterias() {
+        return materias;
+    }
     
 }
 
