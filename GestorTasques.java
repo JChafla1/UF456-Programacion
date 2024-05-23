@@ -88,7 +88,8 @@ class Tasca{
 }
 
 class main {
- private static Scanner scanner = new Scanner(System.in);
+    private static Scanner scanner = new Scanner(System.in);
+    private static GestorTasques gestor = new GestorTasques();
 
  public static void main(String[] args) {
         while (true) {
