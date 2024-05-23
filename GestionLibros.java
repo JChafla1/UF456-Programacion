@@ -59,6 +59,10 @@ class Libro {
 
 public class GestionLibros {
     public static void main(String[] args) {
+        // Creacion de listas para diferentes generos
+        LlistaLlibres<Novela> listaNoveles = new LlistaLlibres<>();
+        LlistaLlibres<CienciaFiccion> listaCienciaFiccion = new LlistaLlibres<>();
+        LlistaLlibres<Poesia> listaPoesia = new LlistaLlibres<>();
 
     }
 }
