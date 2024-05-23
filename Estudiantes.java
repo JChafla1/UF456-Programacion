@@ -51,7 +51,16 @@ public class RegistroEstudiantes {
         boolean salir = false;
 
         while (!salir) {
-            
+            System.out.println("\nSelecciona una opcion:");
+            System.out.println("1.- Introducir estudiante");
+            System.out.println("2.- Introducir materia a estudiante existente");
+            System.out.println("3.- Eliminar materia de estudiante existente");
+            System.out.println("4.- Mostrar todos los estudiantes registrados");
+            System.out.println("5.- Mostrar les matèries d'un estudiant especifico");
+            System.out.println("6.- Salir");
+
+            int opcio = scanner.nextInt();
+            scanner.nextLine();
         }
     }
 }
