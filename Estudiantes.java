@@ -46,5 +46,9 @@ class Estudiante {
 public class RegistroEstudiantes {
     private static HashMap<String, Estudiante> estudiantes = new HashMap<>();
     private static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        
+    }
     
 }
