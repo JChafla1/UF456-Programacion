@@ -63,7 +63,9 @@ public class GestionLibros {
 
 // Clases especificas para cada genero
 class Novela extends Libro {
-
+    public Novela(String titulo, String autor) {
+        super(titulo, autor);
+    }
 }
 
 class CienciaFiccio extends Libro {
