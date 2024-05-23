@@ -9,6 +9,12 @@ public class GestorTasques {
         this.listaTascas = new ArrayList<>();
         this.nextId = 1;
     }
+
+    public void añadirTasca(String prioritad) {
+        Tasca tasca = new Tasca(nextId++, prioritad);
+        listaTascas.add(tasca);
+        System.out.println("Tasca afegida correctament.");
+    }
  
 }
 
