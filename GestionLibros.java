@@ -86,6 +86,11 @@ public class GestionLibros {
             System.out.println("Libro no encontrado");
         }
 
+        // Eliminar un libro de la lista
+        listaNoveles.eliminarLibro(new Novela("Don Quixot", "Miguel de Cervantes"));
+        System.out.println("\nLibros de novelas despues de eliminar 'Don Quixot':");
+        listaNoveles.mostrarLibros();
+
     }
 }
 
