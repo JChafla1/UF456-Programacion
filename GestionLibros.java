@@ -75,6 +75,8 @@ class CienciaFiccion extends Libro {
 }
 
 class Poesia extends Libro {
-
+    public Poesia(String titulo, String autor) {
+        super(titulo, autor);
+    }
 }
 
