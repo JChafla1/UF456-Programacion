@@ -137,5 +137,15 @@ public class RegistroEstudiantes {
         }
     }
 
+    private static void mostrarEstudiantes() {
+        if (estudiantes.isEmpty()) {
+            System.out.println("No hay estudiantes registrados");
+        } else {
+            for (Estudiante estudiante : estudiantes.values()) {
+                System.out.println(estudiante.getNombre() + " " + estudiante.getApellido() + ", Edat: " + estudiante.getEdad());
+            }
+        }
+    }
+
 
 }
