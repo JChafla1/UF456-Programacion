@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 
-public class GestorTasques {
+class GestorTasques {
     private ArrayList<Tasca> listaTascas;
     private int nextId;
 
@@ -87,7 +87,7 @@ class Tasca{
     }
 }
 
-class main {
+public class main {
     private static Scanner scanner = new Scanner(System.in);
     private static GestorTasques gestor = new GestorTasques();
 
@@ -134,6 +134,28 @@ class main {
         System.out.print("Introdueix la prioritat (baixa, mitjana, alta): ");
         String prioridad = scanner.nextLine();
         gestor.añadirTasca(prioridad);
+    }
+
+    private static void marcarCompletada() {
+        System.out.print("Introdueix l'ID de la tasca a marcar com a completada: ");
+        int id = scanner.nextInt();
+        gestor.marcarCompletada(id);
+    }
+
+    private static void borrarTasca() {
+        System.out.print("Introdueix l'ID de la tasca a esborrar: ");
+        int id = scanner.nextInt();
+        gestor.borrarTasca(id);
+    }
+
+    private static void mostrarTasques() {
+        gestor.mostrarTasques();
+    }
+
+    private static void mostrarTasquesPrioridad() {
+        System.out.print("Introdueix la prioritat a mostrar (baixa, mitjana, alta): ");
+        String prioridad = scanner.nextLine();
+        gestor.mostrarTasquesPrioridad(prioridad);
     }
     
 }
