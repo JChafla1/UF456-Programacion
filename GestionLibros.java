@@ -17,6 +17,15 @@ class LlistaLlibres<T> {
     
 }
 
+// Clase base de Libro
+class Libro {
+    // Atributos
+    private String titulo;
+    private String autor;
+
+
+}
+
 public class GestionLibros {
     
 }
