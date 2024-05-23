@@ -77,6 +77,15 @@ public class GestionLibros {
         System.out.println("\nLibros de poesia:");
         listaPoesia.mostrarLibros();
 
+        // Buscar un libro por titulo
+        System.out.println("\nBuscando 'Dune' a la lista de ciencia ficcion:");
+        CienciaFiccion libroBuscado = listaCienciaFiccion.buscarLibroPorTitulo("Dune");
+        if (libroBuscado != null) {
+            System.out.println("Libro encontrado: " + libroBuscado);
+        } else {
+            System.out.println("Libro no encontrado");
+        }
+
     }
 }
 
