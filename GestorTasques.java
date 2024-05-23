@@ -129,5 +129,11 @@ class main {
 
         }
     }
+
+    private static void añadirTasca() {
+        System.out.print("Introdueix la prioritat (baixa, mitjana, alta): ");
+        String prioridad = scanner.nextLine();
+        gestor.añadirTasca(prioridad);
+    }
     
 }
