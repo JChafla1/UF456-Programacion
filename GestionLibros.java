@@ -23,7 +23,20 @@ class Libro {
     private String titulo;
     private String autor;
 
+    public Libro(String titulo, String autor) {
+        this.titulo = titulo;
+        this.autor = autor;
+    }
 
+    public String getTitulo() {
+        return titulo;
+    }
+
+    // Sirve para hacer una redefinicion de codigo
+    @Override
+    public String toString() {
+        return "Titulo: " + titulo + ", Autor: " + autor;
+    }
 }
 
 public class GestionLibros {
