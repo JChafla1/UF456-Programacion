@@ -48,7 +48,10 @@ public class RegistroEstudiantes {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        
+        boolean salir = false;
+
+        while (!salir) {
+            
+        }
     }
-    
 }
