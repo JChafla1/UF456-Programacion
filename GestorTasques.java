@@ -2,7 +2,13 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 public class GestorTasques {
-    
+    private ArrayList<Tasca> listaTascas;
+    private int nextId;
+
+    public GestorTasques() {
+        this.listaTascas = new ArrayList<>();
+        this.nextId = 1;
+    }
  
 }
 
