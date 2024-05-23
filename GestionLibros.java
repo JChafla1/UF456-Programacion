@@ -25,8 +25,14 @@ class LlistaLlibres<T> {
         }
         return null;
     }
-    
+
+    public void mostrarLibros() {
+        for (T libro : lista) {
+            System.out.println(libro);
+        }
+    }    
 }
+
 
 // Clase base de Libro
 class Libro {
