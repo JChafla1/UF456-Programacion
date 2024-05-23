@@ -33,7 +33,7 @@ class Estudiante {
     }
 
     // Metodos de manipulacion
-    public void afegirMateria(String materia) {
+    public void introducirMateria(String materia) {
         materias.add(materia);
     }
 
