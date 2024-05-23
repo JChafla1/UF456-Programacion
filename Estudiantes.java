@@ -61,6 +61,35 @@ public class RegistroEstudiantes {
 
             int opcio = scanner.nextInt();
             scanner.nextLine();
+
+            int opcion = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (opcion) {
+                case 1:
+                    inroducirEstudiante();
+                    break;
+                case 2:
+                    introducirMateriaEstudiante();
+                    break;
+                case 3:
+                    eliminarMateriaEstudiante();
+                    break;
+                case 4:
+                    mostrarEstudiantes();
+                    break;
+                case 5:
+                    mostrarMateriesEstudiante();
+                    break;
+                case 6:
+                    salir = true;
+                    break;
+                default:
+                    System.out.println("Opcion no valida, introduce una opcion de la lista");
+                    break;
+            }
         }
+        
+        scanner.close();
     }
 }
