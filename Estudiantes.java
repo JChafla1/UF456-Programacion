@@ -92,4 +92,20 @@ public class RegistroEstudiantes {
         
         scanner.close();
     }
+
+    private static void introducirEstudiante() {
+        System.out.print("Nombre: ");
+        String nombre = scanner.nextLine();
+        System.out.print("Apellido: ");
+        String apellido = scanner.nextLine();
+        System.out.print("Edad: ");
+        int edad = scanner.nextInt();
+        scanner.nextLine(); // Consumir la nova línia
+
+        Estudiante estudiante = new Estudiante(nombre, apellido, edad);
+        estudiantes.put(nombre + " " + apellido, estudiante);
+        System.out.println("Estudiant añadido correctamente");
+    }
+
+
 }
