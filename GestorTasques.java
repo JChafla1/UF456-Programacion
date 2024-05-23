@@ -10,8 +10,8 @@ public class GestorTasques {
         this.nextId = 1;
     }
 
-    public void añadirTasca(String prioritad) {
-        Tasca tasca = new Tasca(nextId++, prioritad);
+    public void añadirTasca(String prioridad) {
+        Tasca tasca = new Tasca(nextId++, prioridad);
         listaTascas.add(tasca);
         System.out.println("Tasca afegida correctament.");
     }
