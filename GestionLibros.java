@@ -1,3 +1,4 @@
+import java.util.List;
 
 // Clase generica LlistaLlibres
 class LlistaLlibres<T> {
