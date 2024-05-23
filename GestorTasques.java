@@ -26,6 +26,11 @@ public class GestorTasques {
         }
         System.out.println("Tasca no encontrada.");
     }
+
+    public void borrarTasca(int id) {
+        listaTascas.removeIf(tasca -> tasca.getId() == id);
+        System.out.println("Tasca borrada correctamente");
+    }
  
 }
 
