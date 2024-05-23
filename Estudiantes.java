@@ -122,5 +122,20 @@ public class RegistroEstudiantes {
         }
     }
 
+    private static void eliminarMateriaEstudiante() {
+        System.out.print("Nombre completo del estudiante: ");
+        String nombreCompleto = scanner.nextLine();
+        Estudiante estudiante = estudiantes.get(nombreCompleto);
+
+        if (estudiante != null) {
+            System.out.print("Materia a eliminar: ");
+            String materia = scanner.nextLine();
+            estudiante.eliminarMateria(materia);
+            System.out.println("Materia eliminada correctamente");
+        } else {
+            System.out.println("Estudiante no encontrado");
+        }
+    }
+
 
 }
