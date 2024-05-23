@@ -68,8 +68,10 @@ class Novela extends Libro {
     }
 }
 
-class CienciaFiccio extends Libro {
-
+class CienciaFiccion extends Libro {
+    public CienciaFiccion(String titulo, String autor) {
+        super(titulo, autor);
+    }
 }
 
 class Poesia extends Libro {
