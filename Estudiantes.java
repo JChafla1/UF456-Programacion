@@ -147,5 +147,24 @@ public class RegistroEstudiantes {
         }
     }
 
+    private static void mostrarMateriesEstudiante() {
+        System.out.print("Nombre completo del estudiante: ");
+        String nombreCompleto = scanner.nextLine();
+        Estudiante estudiante = estudiantes.get(nombreCompleto);
+
+        if (estudiante != null) {
+            ArrayList<String> materias = estudiante.getMaterias();
+            if (materias.isEmpty()) {
+                System.out.println("El estudiante no esta matriculado en ninguna materia");
+            } else {
+                System.out.println("Materias de " + nombreCompleto + ":");
+                for (String materia : materias) {
+                    System.out.println("- " + materia);
+                }
+            }
+        } else {
+            System.out.println("Estudiant no trobat.");
+        }
+    }
 
 }
