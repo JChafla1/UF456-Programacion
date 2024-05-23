@@ -31,6 +31,16 @@ public class GestorTasques {
         listaTascas.removeIf(tasca -> tasca.getId() == id);
         System.out.println("Tasca borrada correctamente");
     }
+
+    public void mostrarTasques() {
+        if (listaTascas.isEmpty()) {
+            System.out.println("No hi ha tasques per mostrar.");
+        } else {
+            for (Tasca tasca : listaTascas) {
+                System.out.println(tasca);
+            }
+        }
+    }
  
 }
 
