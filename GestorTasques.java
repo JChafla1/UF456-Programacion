@@ -42,9 +42,9 @@ public class GestorTasques {
         }
     }
 
-    public void mostrarTasquesPrioridad(String prioritat) {
+    public void mostrarTasquesPrioridad(String prioridad) {
         for (Tasca tasca : listaTascas) {
-            if (tasca.getPrioritat().equalsIgnoreCase(prioritat)) {
+            if (tasca.getPrioridad().equalsIgnoreCase(prioridad)) {
                 System.out.println(tasca);
             }
         }
