@@ -107,5 +107,20 @@ public class RegistroEstudiantes {
         System.out.println("Estudiant añadido correctamente");
     }
 
+    private static void introducirMateriaEstudiante() {
+        System.out.print("Nombre completo del estudiante: ");
+        String nomComplet = scanner.nextLine();
+        Estudiante estudiante = estudiantes.get(nomComplet);
+
+        if (estudiante != null) {
+            System.out.print("Matèria a afegir: ");
+            String materia = scanner.nextLine();
+            estudiante.introducirMateria(materia);
+            System.out.println("Matèria afegida correctament.");
+        } else {
+            System.out.println("Estudiant no trobat.");
+        }
+    }
+
 
 }
