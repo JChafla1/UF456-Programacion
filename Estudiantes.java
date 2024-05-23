@@ -67,7 +67,7 @@ public class RegistroEstudiantes {
 
             switch (opcion) {
                 case 1:
-                    inroducirEstudiante();
+                    introducirEstudiante();
                     break;
                 case 2:
                     introducirMateriaEstudiante();
