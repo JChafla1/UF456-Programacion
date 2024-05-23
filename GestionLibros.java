@@ -64,6 +64,11 @@ public class GestionLibros {
         LlistaLlibres<CienciaFiccion> listaCienciaFiccion = new LlistaLlibres<>();
         LlistaLlibres<Poesia> listaPoesia = new LlistaLlibres<>();
 
+        // Añadir libros a las listas
+        listaNoveles.introducirLibro(new Novela("Don Quixot", "Miguel de Cervantes"));
+        listaCienciaFiccion.introducirLibro(new CienciaFiccion("Dune", "Frank Herbert"));
+        listaPoesia.introducirLibro(new Poesia("La Divina Comèdia", "Dante Alighieri"));
+
     }
 }
 
