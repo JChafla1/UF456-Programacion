@@ -69,6 +69,14 @@ public class GestionLibros {
         listaCienciaFiccion.introducirLibro(new CienciaFiccion("Dune", "Frank Herbert"));
         listaPoesia.introducirLibro(new Poesia("La Divina Comèdia", "Dante Alighieri"));
 
+        // Mostrar tots els llibres de cada llista
+        System.out.println("Libros de novelas:");
+        listaNoveles.mostrarLibros();
+        System.out.println("\nLibros de ciencia ficcion:");
+        listaCienciaFiccion.mostrarLibros();
+        System.out.println("\nLibros de poesia:");
+        listaPoesia.mostrarLibros();
+
     }
 }
 
