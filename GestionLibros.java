@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.ArrayList;
 
 // Clase generica LlistaLlibres
 class LlistaLlibres<T> {
@@ -57,7 +58,9 @@ class Libro {
 }
 
 public class GestionLibros {
-    
+    public static void main(String[] args) {
+
+    }
 }
 
 
