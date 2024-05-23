@@ -15,6 +15,17 @@ public class GestorTasques {
         listaTascas.add(tasca);
         System.out.println("Tasca afegida correctament.");
     }
+
+    public void marcarCompletada(int id) {
+        for (Tasca tasca : listaTascas) {
+            if (tasca.getId() == id) {
+                tasca.marcarCompletada();
+                System.out.println("Tasca marcada como completada");
+                return;
+            }
+        }
+        System.out.println("Tasca no encontrada.");
+    }
  
 }
 
@@ -49,7 +60,7 @@ class Tasca{
 
     @Override // Sirve para hacer una redefinicion de codigo
     public String toString() {
-        return "ID: " + id + ", Descripció: " + descripcio + ", Prioritat: " + prioritat + ", Completada: " + (completada ? "Sí" : "No");
+        return "ID: " + id + ", Prioritad: " + prioridad + ", Completada: " + (completa ? "Sí" : "No");
     }
 }
 
