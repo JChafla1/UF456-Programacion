@@ -26,5 +26,19 @@ public class Gestion {
     public List<Personaje> listarPersonajes() {
         return personajes;
     }
+
+
+    // Métodos para gestionar elementos
+    public void agregarElemento(Elemento elemento) {
+        elementos.add(elemento);
+    }
+
+    public void eliminarElemento(String nombre) {
+        elementos.removeIf(elemento -> elemento.getNombre().equals(nombre));
+    }
+
+    public List<Elemento> listarElementos() {
+        return elementos;
+    }
     
 }
