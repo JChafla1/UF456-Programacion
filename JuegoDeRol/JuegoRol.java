@@ -16,5 +16,11 @@ public class JuegoRol {
             System.out.println(personaje);
         }
 
+        // Listar elementos cargados
+        System.out.println("Elementos cargados desde XML:");
+        for (Elemento elemento : gestion.listarElementos()) {
+            System.out.println(elemento);
+        }
+
     }
 }
