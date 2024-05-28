@@ -6,5 +6,9 @@ public class JuegoRol {
         // Crear una instancia de Gestion
         Gestion gestion = new Gestion();
 
+        // Cargar personajes desde el XML
+        String archivoXML = "personatges.xml"; // Ruta del archivo XML
+        CargadorXML.cargarPersonajesDesdeXML(archivoXML, gestion);
+
     }
 }
