@@ -1,6 +1,10 @@
 package JuegoDeRol;
 
+import org.w3c.dom.*;
 import org.xml.sax.SAXException;
+import javax.xml.parsers.*;
+import java.io.File;
+import java.io.IOException;
 
 public class CargadorXML {
 
