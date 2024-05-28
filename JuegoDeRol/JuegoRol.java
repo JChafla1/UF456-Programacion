@@ -10,5 +10,11 @@ public class JuegoRol {
         String archivoXML = "personatges.xml"; // Ruta del archivo XML
         CargadorXML.cargarPersonajesDesdeXML(archivoXML, gestion);
 
+        // Listar personajes cargados
+        System.out.println("Personajes cargados desde XML:");
+        for (Personaje personaje : gestion.listarPersonajes()) {
+            System.out.println(personaje);
+        }
+
     }
 }
