@@ -12,5 +12,19 @@ public class Gestion {
         this.personajes = new ArrayList<>();
         this.elementos = new ArrayList<>();
     }
+
+
+    // Métodos para gestionar personajes
+    public void agregarPersonaje(Personaje personaje) {
+        personajes.add(personaje);
+    }
+
+    public void eliminarPersonaje(String nombre) {
+        personajes.removeIf(personaje -> personaje.getNombre().equals(nombre));
+    }
+
+    public List<Personaje> listarPersonajes() {
+        return personajes;
+    }
     
 }
