@@ -69,5 +69,18 @@ public class Personaje {
     public void setArmadura(String armadura) {
         this.armadura = armadura;
     }
+
+    // Método toString para representar como una cadena de texto
+    @Override
+    public String toString() {
+        return "Personaje{" +
+                "nombre='" + nombre + '\'' +
+                ", nivel=" + nivel +
+                ", puntosDeVida=" + puntosDeVida +
+                ", puntosDeMana=" + puntosDeMana +
+                ", arma='" + arma + '\'' +
+                ", armadura='" + armadura + '\'' +
+                '}';
+    }
     
 }
