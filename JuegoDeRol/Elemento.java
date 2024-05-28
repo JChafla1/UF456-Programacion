@@ -31,4 +31,22 @@ public class Elemento {
     public String getPociones() {
         return pociones;
     }
+
+
+    // Setters
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setArma(String arma) {
+        this.arma = arma;
+    }
+
+    public void setArmadura(String armadura) {
+        this.armadura = armadura;
+    }
+
+    public void setPociones(String pociones) {
+        this.pociones = pociones;
+    }
 }
