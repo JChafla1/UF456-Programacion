@@ -43,5 +43,31 @@ public class Personaje {
     public String getArmadura() {
         return armadura;
     }
+
+
+    // Setters
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setNivel(int nivel) {
+        this.nivel = nivel;
+    }
+
+    public void setPuntosDeVida(int puntosDeVida) {
+        this.puntosDeVida = puntosDeVida;
+    }
+
+    public void setPuntosDeMana(int puntosDeMana) {
+        this.puntosDeMana = puntosDeMana;
+    }
+
+    public void setArma(String arma) {
+        this.arma = arma;
+    }
+
+    public void setArmadura(String armadura) {
+        this.armadura = armadura;
+    }
     
 }
