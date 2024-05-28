@@ -14,4 +14,21 @@ public class Elemento {
         this.armadura = armadura;
         this.pociones = pociones;
     }
+
+    // Getters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getArma() {
+        return arma;
+    }
+
+    public String getArmadura() {
+        return armadura;
+    }
+
+    public String getPociones() {
+        return pociones;
+    }
 }
