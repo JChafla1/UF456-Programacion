@@ -18,5 +18,30 @@ public class Personaje {
         this.arma = arma;
         this.armadura = armadura;
     }
+
+    // Getters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getNivel() {
+        return nivel;
+    }
+
+    public int getPuntosDeVida() {
+        return puntosDeVida;
+    }
+
+    public int getPuntosDeMana() {
+        return puntosDeMana;
+    }
+
+    public String getArma() {
+        return arma;
+    }
+
+    public String getArmadura() {
+        return armadura;
+    }
     
 }
