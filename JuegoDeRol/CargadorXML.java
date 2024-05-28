@@ -40,9 +40,16 @@ public class CargadorXML {
 
                     Elemento elemento = new Elemento(nombre, arma, armadura, "");
                     gestion.agregarElemento(elemento);
+                }
+            }
 
+        //  Se lanza si hay un problema de configuración con el analizador (parser) de XML
+        } catch (ParserConfigurationException | SAXException | IOException | DOMException e) {
+            System.err.println("Error al cargar el archivo XML: " + e.getMessage());
+
+        // Se lanza si ocurre un error al intentar convertir una cadena de texto a un número
+        } catch (NumberFormatException e) {
+            System.err.println("Error al convertir un número: " + e.getMessage());
         }
-        
     }
-    
 }
