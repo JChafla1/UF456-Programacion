@@ -30,6 +30,12 @@ public class CargadorXML {
                     String arma = eElement.getElementsByTagName("arma").item(0).getTextContent();
                     String armadura = eElement.getElementsByTagName("armadura").item(0).getTextContent();
 
+                    // Se crean instancias de Personaje y Elemento y se agregan a Gestion
+                    Personaje personaje = new Personaje(nombre, nivel, puntosDeVida, puntosDeMana);
+                    gestion.agregarPersonaje(personaje);
+
+                    Elemento elemento = new Elemento(nombre, arma, armadura, "");
+                    gestion.agregarElemento(elemento);
 
         }
         
