@@ -49,4 +49,16 @@ public class Elemento {
     public void setPociones(String pociones) {
         this.pociones = pociones;
     }
+
+    
+    // Método toString para representar como una cadena de texto
+    @Override
+    public String toString() {
+        return "Elemento{" +
+                "nombre='" + nombre + '\'' +
+                ", arma='" + arma + '\'' +
+                ", armadura='" + armadura + '\'' +
+                ", pociones='" + pociones + '\'' +
+                '}';
+    }
 }
