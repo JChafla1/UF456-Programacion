@@ -6,18 +6,15 @@ public class Personaje {
     private int nivel;
     private int puntosDeVida;
     private int puntosDeMana;
-    private String arma;
-    private String armadura;
 
     // Constructor para inicializar un objeto Personaje con valores específicos
-    public Personaje(String nombre, int nivel, int puntosDeVida, int puntosDeMana, String arma, String armadura) {
+    public Personaje(String nombre, int nivel, int puntosDeVida, int puntosDeMana) {
         this.nombre = nombre;
         this.nivel = nivel;
         this.puntosDeVida = puntosDeVida;
         this.puntosDeMana = puntosDeMana;
-        this.arma = arma;
-        this.armadura = armadura;
     }
+
 
     // Getters
     public String getNombre() {
@@ -34,14 +31,6 @@ public class Personaje {
 
     public int getPuntosDeMana() {
         return puntosDeMana;
-    }
-
-    public String getArma() {
-        return arma;
-    }
-
-    public String getArmadura() {
-        return armadura;
     }
 
 
@@ -62,13 +51,6 @@ public class Personaje {
         this.puntosDeMana = puntosDeMana;
     }
 
-    public void setArma(String arma) {
-        this.arma = arma;
-    }
-
-    public void setArmadura(String armadura) {
-        this.armadura = armadura;
-    }
 
     // Método toString para representar como una cadena de texto
     @Override
@@ -78,9 +60,7 @@ public class Personaje {
                 ", nivel=" + nivel +
                 ", puntosDeVida=" + puntosDeVida +
                 ", puntosDeMana=" + puntosDeMana +
-                ", arma='" + arma + '\'' +
-                ", armadura='" + armadura + '\'' +
                 '}';
     }
-    
+
 }
