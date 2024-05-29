@@ -15,5 +15,9 @@ entity Llibre {
     autorId : INT
 }
 
+// Relacion de agregacion, el autor puede tener muchos lirbos
+// El simbolo ||--o{ indica una relacion de agregació con cardinalidad 1 a N
+Autor ||--o{ Llibre : conté
+
 @enduml
 // Final uml
