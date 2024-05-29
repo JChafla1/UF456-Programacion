@@ -23,3 +23,9 @@ INSERT INTO Pelicula (id, titol, anyEstrena, directorId) VALUES (1, 'Jurassic Pa
 INSERT INTO Pelicula (id, titol, anyEstrena, directorId) VALUES (2, 'Inception', 2010, 2);
 INSERT INTO Pelicula (id, titol, anyEstrena, directorId) VALUES (3, 'Interstellar', 2014, 2);
 INSERT INTO Pelicula (id, titol, anyEstrena, directorId) VALUES (4, 'Schindler''s List', 1993, 1);
+
+
+SELECT p.titol, p.anyEstrena 
+FROM Pelicula p 
+JOIN Director d ON p.directorId = d.id 
+WHERE d.nom = 'Christopher' AND d.cognom = 'Nolan';
