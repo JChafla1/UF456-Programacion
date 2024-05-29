@@ -64,6 +64,18 @@ class Flauta extends Viento {
     }
 }
 
+// Esta vez ejemplo de percusion
+class Tambor extends Percusión {
+    public Tambor() {
+        super("Tambor");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Estas tocando el tambor");
+    }
+}
+
 public class Instrumento {
     
 }
