@@ -8,5 +8,12 @@ entity Director {
   *cognom : varchar(255)
 }
 
+entity Pelicula {
+  *id : int
+  *titol : varchar(255)
+  *anyEstrena : int
+  directorId : int 
+}
+
 @enduml
 // Final uml
