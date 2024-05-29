@@ -28,5 +28,10 @@ class Client {
     - dni: String
 }
 
+// Relacion de agregacion "o--"
+// El hotel puede tener 0 o mas habitaciones
+Hotel "1" o-- "0..*" Habitacio : conté // Texto opcional para describir la relacion
+
+
 @enduml
 // Final uml
