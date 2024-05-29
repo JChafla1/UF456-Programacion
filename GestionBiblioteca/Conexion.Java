@@ -15,6 +15,15 @@ public class DatabaseConnection {
 
 public class Main {
     public static void main(String[] args) {
-        
+        LibraryManager manager = new LibraryManager();
+
+        // Añadir un nuevo autor
+        manager.insertAuthor("Isabel", "Allende");
+
+        // Añadir un nuevo libro
+        manager.insertBook("La casa de los espíritus", 1982, 1);
+
+        // Obtener libros en concreto
+        manager.getBooksByAuthor(1);
     }
 }
