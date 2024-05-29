@@ -22,6 +22,11 @@ class Estudiant {
     - matricula: String
 }
 
+// Relaciones
+Professor "1" o-- "0..*" Curs : imparteix
+Curs "0..*" --> "1" Professor : és impartit per
+Curs "0..*" o-- "0..*" Estudiant : inscriu
+
   
 @enduml
 // Final uml
