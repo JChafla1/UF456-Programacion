@@ -36,6 +36,9 @@ Hotel "1" o-- "0..*" Habitacio : conté // Texto opcional para describir la rela
 // Una reserva puede estar asociada a maximo una habitacion
 Habitacio "0..*" --> "0..1" Reserva : és reservada per
 
+// La reserva solo puede estar echa por un cliente
+Reserva "0..*" --> "1" Client : feta per
+
 
 @enduml
 // Final uml
