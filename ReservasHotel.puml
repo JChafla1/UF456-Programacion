@@ -8,5 +8,12 @@ class Hotel {
     - habitacions: List<Habitacio> // Se coge la habitacion de la siguiente clase
 }
 
+// Clase Habitacio
+class Habitacio {
+    - numero: int
+    - capacitat: int
+    - reserva: boolean
+}
+
 @enduml
 // Final uml
