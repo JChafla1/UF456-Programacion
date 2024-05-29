@@ -52,6 +52,18 @@ class Guitarra extends Cuerda {
     }
 }
 
+// Esta vez ejemplo de viento
+class Flauta extends Viento {
+    public Flauta() {
+        super("Flauta");
+    }
+
+    @Override
+    public void play() {
+        System.out.println("Estas tocando la flauta");
+    }
+}
+
 public class Instrumento {
     
 }
