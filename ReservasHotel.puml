@@ -1,7 +1,12 @@
 // Inicio uml
 @startuml
 
-
+// Clase Hotel
+class Hotel {
+    - nom: String
+    - adreça: String
+    - habitacions: List<Habitacio> // Se coge la habitacion de la siguiente clase
+}
 
 @enduml
 // Final uml
