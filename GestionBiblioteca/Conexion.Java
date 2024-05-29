@@ -12,6 +12,25 @@ public class DatabaseConnection {
     }
 }
 
+public class LibraryManager {
+    public void insertAuthor(String nom, String cognom) {
+        String sql = "INSERT INTO Autor (nom, cognom) VALUES (?, ?)";
+
+        
+    }
+
+    public void insertBook(String titol, int anyPublicacio, int autorId) {
+        String sql = "INSERT INTO Llibre (titol, anyPublicacio, autorId) VALUES (?, ?, ?)";
+
+        
+    }
+
+    public void getBooksByAuthor(int autorId) {
+        String sql = "SELECT titol FROM Llibre WHERE autorId = ?";
+
+        
+    }
+}
 
 public class Main {
     public static void main(String[] args) {
