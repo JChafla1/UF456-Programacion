@@ -37,6 +37,21 @@ abstract class Percusión extends Instrument {
     }
 }
 
+// Hereda de la clase Cuerda
+class Guitarra extends Cuerda {
+    
+    // Constructor
+    public Guitarra() {
+        super("Guitarra");
+    }
+
+    // Mensaje indicando que se esta tocando la guitarra
+    @Override
+    public void play() {
+        System.out.println("Estas tocando la guitarra");
+    }
+}
+
 public class Instrumento {
     
 }
