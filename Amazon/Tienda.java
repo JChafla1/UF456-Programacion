@@ -12,4 +12,9 @@ public class Tienda {
         this.productos = new ArrayList<>();
     }
 
+    // Añadir productos
+    public void agregarProducto(Producto producto) {
+        productos.add(producto);
+    }
+
 }
