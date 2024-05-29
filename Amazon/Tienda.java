@@ -26,4 +26,11 @@ public class Tienda {
         return prcioTotal;
     }
 
+    // Mostrar detalles de los productos
+    public void mostrarDetallesProductos() {
+        for (Producto producto : productos) {
+            System.out.println(producto);
+        }
+    }
+
 }
