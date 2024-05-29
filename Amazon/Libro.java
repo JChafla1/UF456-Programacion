@@ -20,6 +20,6 @@ public class Libro extends Producto {
 
     @Override
     public String toString() {
-        return super.toString() + ", Autor: " + autor + ", Número de pàginas: " + numPagines;
+        return super.toString() + ", Autor: " + autor + ", Número de pàginas: " + numPaginas;
     }
 }
