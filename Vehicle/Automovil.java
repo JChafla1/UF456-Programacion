@@ -12,4 +12,17 @@ public class Automovil implements vehicle{
         this.velocidadActual = 0;
     }
 
+
+    // Implementa el método acelerar de la interfaz Vehicle
+    @Override
+    public void accelerar(int velocidad) {
+        this.velocidadActual += velocidad;
+    }
+
+    // Implementa el método frenar de la interfaz Vehicle
+    @Override
+    public void frenar() {
+        this.velocidadActual = 0;
+    }
+
 }
