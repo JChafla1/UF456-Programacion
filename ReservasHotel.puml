@@ -22,5 +22,11 @@ class Reserva {
     - client: String
 }
 
+// Clase Client
+class Client {
+    - nom: String
+    - dni: String
+}
+
 @enduml
 // Final uml
