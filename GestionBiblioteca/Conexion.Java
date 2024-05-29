@@ -30,7 +30,16 @@ public class LibraryManager {
     public void insertBook(String titol, int anyPublicacio, int autorId) {
         String sql = "INSERT INTO Llibre (titol, anyPublicacio, autorId) VALUES (?, ?, ?)";
 
-        
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, titol);
+            pstmt.setInt(2, anyPublicacio);
+            pstmt.setInt(3, autorId);
+            pstmt.executeUpdate();
+            System.out.println("Libro añadido");
+        } catch (SQLException e) {
+            System.out.println("Error al añadir libro: " + e.getMessage());
+        }
     }
 
     public void getBooksByAuthor(int autorId) {
