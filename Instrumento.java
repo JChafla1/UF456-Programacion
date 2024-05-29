@@ -77,5 +77,13 @@ class Tambor extends Percusión {
 }
 
 public class Instrumento {
-    
+    public static void main(String[] args) {
+        Instrument guitarra = new Guitarra();
+        Instrument flauta = new Flauta();
+        Instrument tambor = new Tambor();
+
+        guitarra.play();
+        flauta.play();
+        tambor.play();
+    }
 }
