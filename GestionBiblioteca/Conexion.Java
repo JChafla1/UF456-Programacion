@@ -11,3 +11,10 @@ public class DatabaseConnection {
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 }
+
+
+public class Main {
+    public static void main(String[] args) {
+        
+    }
+}
