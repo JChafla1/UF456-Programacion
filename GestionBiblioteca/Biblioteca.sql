@@ -13,3 +13,12 @@ CREATE TABLE Llibre (
     -- El "autorID" de esta tabla se coge del "id" de la tabla autor
     FOREIGN KEY (autorId) REFERENCES Autor(id)
 );
+
+
+-- Añadir autors
+INSERT INTO Autor (nom, cognom) VALUES ('Gabriel', 'García Márquez');
+INSERT INTO Autor (nom, cognom) VALUES ('J.K.', 'Rowling');
+
+-- Añadir llibres
+INSERT INTO Llibre (titol, anyPublicacio, autorId) VALUES ('Cien años de soledad', 1967, 1);
+INSERT INTO Llibre (titol, anyPublicacio, autorId) VALUES ('Harry Potter y la piedra filosofal', 1997, 2);
