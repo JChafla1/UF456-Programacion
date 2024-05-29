@@ -12,3 +12,8 @@ CREATE TABLE Pelicula (
     -- El "directorId" de esta tabla se coge del "id" de la tabla Director
     FOREIGN KEY (directorId) REFERENCES Director(id)
 );
+
+
+-- Inserción de directores
+INSERT INTO Director (id, nom, cognom) VALUES (1, 'Steven', 'Spielberg');
+INSERT INTO Director (id, nom, cognom) VALUES (2, 'Christopher', 'Nolan');
