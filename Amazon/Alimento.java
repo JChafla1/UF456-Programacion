@@ -27,4 +27,10 @@ public class Alimento extends Producto{
         }
         return precio;
     }
+
+    // Obtenemos el nombre, codigo y precio y le añadimos la fecha de caducidad
+    @Override
+    public String toString() {
+        return super.toString() + ", Fecha de caducidad: " + fechaCaducidad;
+    }
 }
