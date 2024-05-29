@@ -1,7 +1,12 @@
 // Inicio uml
 @startuml
 
-
+// Solo hay un director, no puedo haber dos iguales
+entity Director {
+  *id : int 
+  *nom : varchar(255)
+  *cognom : varchar(255)
+}
 
 @enduml
 // Final uml
