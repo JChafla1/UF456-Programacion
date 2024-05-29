@@ -28,4 +28,8 @@ public class Bicicleta implements vehicle {
         return this.velocidatActual;
     }
 
+    // Este es un método adicional que devuelve el tipo de bicicleta (tipo)
+    public String getTipo() {
+        return this.tipo;
+    }
 }
