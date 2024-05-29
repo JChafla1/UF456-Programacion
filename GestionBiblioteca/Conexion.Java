@@ -45,7 +45,17 @@ public class LibraryManager {
     public void getBooksByAuthor(int autorId) {
         String sql = "SELECT titol FROM Llibre WHERE autorId = ?";
 
-        
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, autorId);
+            ResultSet rs = pstmt.executeQuery();
+            System.out.println("Libros de autor por ID " + autorId + ":");
+            while (rs.next()) {
+                System.out.println(rs.getString("titulo"));
+            }
+        } catch (SQLException e) {
+            System.out.println("Error en obtener los libros del autor: " + e.getMessage());
+        }
     }
 }
 
