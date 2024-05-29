@@ -13,7 +13,18 @@ public class Principal {
 
         // Obtenemos y mostramos las notas de un alumno
         String nombreAlumne = "Anna";
-        double[] notas = gestorNotas.obtenirNotes(nombreAlumne);
+        double[] notas = gestorNotas.obtenerNotas(nombreAlumne);
         System.out.println("Notas de " + nombreAlumne + ": " + Arrays.toString(notas));
+
+        // Calculamos y mostramos las estadísticas de las notas del alumno
+        double media = CalculadoraEstadistica.calcularMedia(notas);
+        double maximo = CalculadoraEstadistica.calcularMaximo(notas);
+        double minimo = CalculadoraEstadistica.calcularMinimo(notas);
+
+        System.out.println("Media de las notas de " + nombreAlumne + ": " + media);
+        System.out.println("Nota màxima de " + nombreAlumne + ": " + maximo);
+        System.out.println("Nota mínima de " + nombreAlumne + ": " + minimo);
+
+        
     }
 }
