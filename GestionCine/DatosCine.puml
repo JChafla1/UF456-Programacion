@@ -15,5 +15,8 @@ entity Pelicula {
   directorId : int 
 }
 
+// Misma relacion que en el ejercicio anterior con autor y libro
+Director ||--o{ Pelicula : "dirige"
+
 @enduml
 // Final uml
