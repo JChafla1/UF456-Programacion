@@ -10,5 +10,10 @@ public class Principal {
         gestorNotas.registrarNotss("Anna", new double[] {8.5, 9.0, 7.5});
         gestorNotas.registrarNotss("Joan", new double[] {6.0, 7.5, 8.0});
         gestorNotas.registrarNotss("Maria", new double[] {9.0, 8.5, 9.5});
+
+        // Obtenemos y mostramos las notas de un alumno
+        String nombreAlumne = "Anna";
+        double[] notas = gestorNotas.obtenirNotes(nombreAlumne);
+        System.out.println("Notas de " + nombreAlumne + ": " + Arrays.toString(notas));
     }
 }
