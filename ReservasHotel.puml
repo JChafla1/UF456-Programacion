@@ -12,14 +12,14 @@ class Hotel {
 class Habitacio {
     - numero: int
     - capacitat: int
-    - reserva: boolean
+    - reserva: Reserva
 }
 
-// Clase reserva
+// Clase Reserva
 class Reserva {
     - dataInici: date
     - dataFi: date
-    - client: String
+    - client: Client
 }
 
 // Clase Client
