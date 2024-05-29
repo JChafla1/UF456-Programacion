@@ -7,6 +7,15 @@ class Professor {
     - departament: String
     - cursos: List<Curs> // Se coge el curso de la siguiente clase
 }
+
+// Clase curso
+class Curso{
+    - nom: String
+    - codi: int
+    - Professor: String
+    - Estudiants: List<Estudiant> // Se coge el estudiante de la siguiente clase
+}
+
   
 @enduml
 // Final uml
