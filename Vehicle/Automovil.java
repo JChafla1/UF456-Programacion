@@ -25,4 +25,16 @@ public class Automovil implements vehicle{
         this.velocidadActual = 0;
     }
 
+    // Implementa el método obtenirVelocitatActual de la interfaz Vehicle
+    @Override
+    public int obtenerVelocidadActual() {
+        return this.velocidatActual;
+    }
+
+    // Este método no forma parte de la interfaz Vehicle pero se 
+    // proporciona para permitir que otros objetos obtengan la marca del automóvil
+    public String getMarca() {
+        return this.marca;
+    }
+
 }
