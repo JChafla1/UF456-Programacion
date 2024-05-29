@@ -15,4 +15,16 @@ public class Alimento extends Producto{
     public void establecerFechaCaducidad(LocalDate fechaCaducidad) {
         this.fechaCaducidad = fechaCaducidad;
     }
+
+
+    // Indica que estamos sobreescribiendo el método abstracto calcularPreuFinal() definido en la clase Producto
+    @Override
+    public double calcularPrecioFinal() {
+        LocalDate avui = LocalDate.now();
+        long diesRestants = avui.until(fechaCaducidad).getDays();
+        if (diesRestants <= 7) {
+            return precio * 0.5; // 50% de descompte si quedan 7 dias o menos
+        }
+        return precio;
+    }
 }
