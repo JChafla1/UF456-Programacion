@@ -16,7 +16,15 @@ public class LibraryManager {
     public void insertAuthor(String nom, String cognom) {
         String sql = "INSERT INTO Autor (nom, cognom) VALUES (?, ?)";
 
-        
+        try (Connection conn = DatabaseConnection.getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, nom);
+            pstmt.setString(2, cognom);
+            pstmt.executeUpdate();
+            System.out.println("Autor añadido von exito!");
+        } catch (SQLException e) {
+            System.out.println("Error al añadir a autor: " + e.getMessage());
+        }
     }
 
     public void insertBook(String titol, int anyPublicacio, int autorId) {
