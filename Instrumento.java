@@ -16,6 +16,27 @@ abstract class Instrument {
     public abstract void play();
 }
 
+// Heredamos el nombre de la clase instrumento
+abstract class Cuerda extends Instrument {
+    public Cuerda(String name) {
+        super(name);
+    }
+}
+
+// Heredamos el nombre de la clase instrumento
+abstract class Viento extends Instrument {
+    public Viento(String name) {
+        super(name);
+    }
+}
+
+// Heredamos el nombre de la clase instrumento
+abstract class Percusión extends Instrument {
+    public Percusión(String name) {
+        super(name);
+    }
+}
+
 public class Instrumento {
     
 }
