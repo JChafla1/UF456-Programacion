@@ -10,4 +10,15 @@ public class CalculadoraEstadistica {
         }
         return suma / notas.length;
     }
+
+    // Calcula la nota máxima en el array notes
+    public static double calcularMaximo(double[] notas) {
+        double maximo = notas[0];
+        for (double nota : notas) {
+            if (nota > maximo) {
+                maximo = nota;
+            }
+        }
+        return maximo;
+    }
 }
