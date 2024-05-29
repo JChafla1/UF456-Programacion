@@ -8,5 +8,12 @@ entity Autor {
     cognom : VARCHAR(50)
 }
 
+entity Llibre {
+    * id : INT
+    titol : VARCHAR(100)
+    anyPublicacio : INT
+    autorId : INT
+}
+
 @enduml
 // Final uml
