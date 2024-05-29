@@ -32,6 +32,10 @@ class Client {
 // El hotel puede tener 0 o mas habitaciones
 Hotel "1" o-- "0..*" Habitacio : conté // Texto opcional para describir la relacion
 
+// Relacion de asociacion "-->"
+// Una reserva puede estar asociada a maximo una habitacion
+Habitacio "0..*" --> "0..1" Reserva : és reservada per
+
 
 @enduml
 // Final uml
