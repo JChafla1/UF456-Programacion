@@ -8,5 +8,5 @@ public interface vehicle {
     public void frenar();
 
     // Métode per obtenir la velocitat actual del vehícle en kilómetres per hora.
-    public void obtenerVelocidadActual();
+    public int obtenerVelocidadActual();
 }
