@@ -21,4 +21,15 @@ public class CalculadoraEstadistica {
         }
         return maximo;
     }
+
+    // Minimo
+    public static double calcularMinimo(double[] notas) {
+        double minimo = notas[0];
+        for (double nota : notas) {
+            if (nota < minimo) {
+                minimo = nota;
+            }
+        }
+        return minimo;
+    }
 }
