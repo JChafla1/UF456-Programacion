@@ -16,6 +16,12 @@ class Curso{
     - Estudiants: List<Estudiant> // Se coge el estudiante de la siguiente clase
 }
 
+// Clase estudiante
+class Estudiant {
+    - nom: String
+    - matricula: String
+}
+
   
 @enduml
 // Final uml
