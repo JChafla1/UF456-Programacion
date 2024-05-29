@@ -15,5 +15,12 @@ class Habitacio {
     - reserva: boolean
 }
 
+// Clase reserva
+class Reserva {
+    - dataInici: date
+    - dataFi: date
+    - client: String
+}
+
 @enduml
 // Final uml
