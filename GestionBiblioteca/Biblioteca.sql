@@ -22,3 +22,10 @@ INSERT INTO Autor (nom, cognom) VALUES ('J.K.', 'Rowling');
 -- Añadir llibres
 INSERT INTO Llibre (titol, anyPublicacio, autorId) VALUES ('Cien años de soledad', 1967, 1);
 INSERT INTO Llibre (titol, anyPublicacio, autorId) VALUES ('Harry Potter y la piedra filosofal', 1997, 2);
+
+
+-- Forma de hacer una consulta demasiado concreta
+SELECT Llibre.titol, Llibre.anyPublicacio
+FROM Llibre
+JOIN Autor ON Llibre.autorId = Autor.id
+WHERE Autor.nom = 'Gabriel' AND Autor.cognom = 'García Márquez';
