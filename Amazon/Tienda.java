@@ -17,4 +17,13 @@ public class Tienda {
         productos.add(producto);
     }
 
+    // Calcular precios
+    public double calcularPrecioTotal() {
+        double prcioTotal = 0;
+        for (Producto producto : productos) {
+            prcioTotal += producto.calcularPrecioFinal();
+        }
+        return prcioTotal;
+    }
+
 }
