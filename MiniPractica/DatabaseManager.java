@@ -48,4 +48,19 @@ public class DatabaseManager {
         }
         return books;
     }
+
+    // Actualizar la información de un libro existente
+    public void updateBook(Book book) {
+        String sql = "UPDATE books SET title = ?, author = ?, year = ? WHERE id = ?";
+        try (Connection conn = connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, book.getTitle());
+            pstmt.setString(2, book.getAuthor());
+            pstmt.setInt(3, book.getYear());
+            pstmt.setInt(4, book.getId());
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
