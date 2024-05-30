@@ -26,6 +26,11 @@ public class InterficiesGrafiques extends Application{
 
         // Crear la escena con layout
         Scene scene = new Scene(root, 300, 200);
+
+        // Configurar el escenario principal
+        primaryStage.setTitle("Aplicació de Salutació");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
 
     public static void main(String[] args) {
