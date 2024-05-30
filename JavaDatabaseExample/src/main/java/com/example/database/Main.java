@@ -1,4 +1,6 @@
-package com.example.database;
+package JavaDatabaseExample.src.main.java.com.example.database;
+import JavaDatabaseExample.src.main.java.com.example.database.models.Student;
+
 
 
 public class Main {
