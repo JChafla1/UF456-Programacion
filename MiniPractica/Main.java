@@ -17,5 +17,7 @@ public class Main {
         Book bookToUpdate = new Book(1, "Don Quijote de la Mancha", "Miguel de Cervantes", 1605);
         dbManager.updateBook(bookToUpdate);
 
+        // Eliminar un libro
+        dbManager.deleteBook(2);
     }
 }
