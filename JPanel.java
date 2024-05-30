@@ -1,5 +1,6 @@
 import java.awt.GridLayout;
 
+import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
@@ -20,6 +21,12 @@ public class JPanel {
             JButton button = new JButton("Botó " + i);
             panel.add(button);
         }
+
+        // Agregar el JPanel al JFrame
+        frame.add(panel);
+        
+        // Hacer visible el JFrame
+        frame.setVisible(true);
 
     }
 }
