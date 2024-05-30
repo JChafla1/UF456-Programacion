@@ -19,6 +19,13 @@ public class InterficiesGrafiques extends Application{
             alert.setContentText("Hola");
             alert.showAndWait();
         });
+
+        // Crear el layout y agregar el boton
+        StackPane root = new StackPane();
+        root.getChildren().add(btn);
+
+        // Crear la escena con layout
+        Scene scene = new Scene(root, 300, 200);
     }
 
     public static void main(String[] args) {
