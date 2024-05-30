@@ -16,5 +16,17 @@ public class Conexion {
             pstmt.executeUpdate();
         }
     }
+
+    // Insertar Pelicula
+    public static void insertPelicula(Connection conn, int id, String titol, int anyEstrena, int directorId) throws SQLException {
+        String sql = "INSERT INTO Pelicula (id, titol, anyEstrena, directorId) VALUES (?, ?, ?, ?)";
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, id);
+            pstmt.setString(2, titol);
+            pstmt.setInt(3, anyEstrena);
+            pstmt.setInt(4, directorId);
+            pstmt.executeUpdate();
+        }
+    }
     
 }
