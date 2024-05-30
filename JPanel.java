@@ -4,7 +4,8 @@ import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-public class JPanel {
+// Le he cambiado el nombre debido a la confusion que habia, no se me importaba el JPanel
+public class EjercicioBoton {
     public static void main(String[] args) {
 
         // Crear el JFrame
