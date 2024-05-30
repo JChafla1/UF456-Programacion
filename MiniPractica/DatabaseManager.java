@@ -63,4 +63,16 @@ public class DatabaseManager {
             e.printStackTrace();
         }
     }
+
+    // Eliminar un libro de la base de datos
+    public void deleteBook(int id) {
+        String sql = "DELETE FROM books WHERE id = ?";
+        try (Connection conn = connect();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, id);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
