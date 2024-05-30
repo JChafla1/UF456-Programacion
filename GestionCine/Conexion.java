@@ -28,5 +28,22 @@ public class Conexion {
             pstmt.executeUpdate();
         }
     }
+
+    // SQL que une las tablas de "peliculas" y "director"
+    public static void getPeliculasByDirector(Connection conn, String nom, String cognom) throws SQLException {
+        String sql = "SELECT p.titol, p.anyEstrena " +
+                     "FROM Pelicula p " +
+                     "JOIN Director d ON p.directorId = d.id " +
+                     "WHERE d.nom = ? AND d.cognom = ?";
+        try (PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setString(1, nom);
+            pstmt.setString(2, cognom);
+            try (ResultSet rs = pstmt.executeQuery()) {
+                while (rs.next()) {
+                    System.out.println("Titol: " + rs.getString("titol") + ", Any Estrena: " + rs.getInt("anyEstrena"));
+                }
+            }
+        }
+    }
     
 }
