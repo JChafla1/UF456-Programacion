@@ -13,5 +13,9 @@ public class Main {
             System.out.println(book);
         }
 
+        // Actualitzar un libro
+        Book bookToUpdate = new Book(1, "Don Quijote de la Mancha", "Miguel de Cervantes", 1605);
+        dbManager.updateBook(bookToUpdate);
+
     }
 }
