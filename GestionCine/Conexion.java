@@ -45,5 +45,21 @@ public class Conexion {
             }
         }
     }
+
+    // Main
+    public static void main(String[] args) {
+        try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS)) {
+            // Agregar nuevo director
+            insertDirector(conn, 3, "Quentin", "Tarantino");
+            
+            // Agregar nueva pelicula
+            insertPelicula(conn, 5, "Pulp Fiction", 1994, 3);
+            
+            // Recuperar peliculas de un director concreto
+            getPeliculasByDirector(conn, "Quentin", "Tarantino");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
     
 }
